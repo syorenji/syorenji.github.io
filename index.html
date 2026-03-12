@@ -5,53 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>日蓮宗 天鼓山 昭蓮寺</title>
   <style>
-    :root{
-      --bg:#f6f3ee;
-      --text:#1f1a17;
-      --muted:#6f665e;
-      --line:rgba(31,26,23,0.12);
-      --card:rgba(255,255,255,0.72);
-      --shadow:0 12px 40px rgba(0,0,0,0.08);
-    }
-
-    *{
-      box-sizing:border-box;
-    }
-
-    html,body{
-      margin:0;
-      padding:0;
-    }
-
     body{
+      margin:0;
       min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:#f6f3ee;
+      color:#1f1a17;
       font-family:
         "Hiragino Mincho ProN",
         "Yu Mincho",
         "Noto Serif JP",
         serif;
-      color:var(--text);
-      background:
-        linear-gradient(rgba(246,243,238,0.88), rgba(246,243,238,0.92)),
-        url("img/temple-bg.jpg") center center / cover no-repeat fixed;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:24px;
-    }
-
-    .wrap{
-      width:100%;
-      max-width:520px;
     }
 
     .card{
-      background:var(--card);
-      backdrop-filter:blur(8px);
-      -webkit-backdrop-filter:blur(8px);
-      border:1px solid var(--line);
+      width:100%;
+      max-width:520px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.08);
       border-radius:24px;
-      box-shadow:var(--shadow);
+      box-shadow:0 12px 40px rgba(0,0,0,0.08);
       text-align:center;
       padding:32px 24px 36px;
     }
@@ -62,7 +38,6 @@
       margin:0 auto 24px;
       border-radius:50%;
       overflow:hidden;
-      border:1px solid rgba(31,26,23,0.08);
       box-shadow:0 8px 24px rgba(0,0,0,0.10);
       background:#ddd;
     }
@@ -78,7 +53,7 @@
     .eyebrow{
       font-size:0.82rem;
       letter-spacing:0.18em;
-      color:var(--muted);
+      color:#6f665e;
       margin:0 0 10px;
     }
 
@@ -93,47 +68,31 @@
       margin:10px 0 0;
       font-size:1rem;
       line-height:1.9;
-      color:var(--muted);
+      color:#6f665e;
     }
 
     .coming{
       margin:28px auto 0;
       display:inline-block;
       padding:10px 18px;
-      border:1px solid var(--line);
+      border:1px solid rgba(0,0,0,0.12);
       border-radius:999px;
       font-size:0.95rem;
       letter-spacing:0.08em;
-      color:var(--text);
-      background:rgba(255,255,255,0.7);
-    }
-
-    @media (min-width: 768px){
-      .card{
-        padding:40px 36px 44px;
-      }
-
-      .avatar{
-        width:260px;
-      }
+      background:#fff;
     }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="card">
-      <div class="avatar">
-        <img src="img/yudai.png" alt="昭蓮寺 ご住職" />
-      </div>
+  <section class="card">
+    <div class="avatar">
+      <img src="img/yudai.png" alt="昭蓮寺 ご住職" />
+    </div>
 
-      <p class="eyebrow">日蓮宗 天鼓山</p>
-      <h1>昭蓮寺</h1>
-      <p class="sub">
-        公式ウェブサイト準備中
-      </p>
-
-      <div class="coming">Coming Soon...</div>
-    </section>
-  </main>
+    <p class="eyebrow">日蓮宗 天鼓山</p>
+    <h1>昭蓮寺</h1>
+    <p class="sub">公式ウェブサイト準備中</p>
+    <div class="coming">Coming Soon...</div>
+  </section>
 </body>
 </html>
